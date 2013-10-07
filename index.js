@@ -9,9 +9,13 @@ function start(options, piglow) {
     myWatch = new Watch();
 
     myWatch.on('tick', function(time) {
+        piglow.reset;
+
+        piglow.startTransaction();
         map(0, time.h, brightness, piglow);
         map(1, time.m, brightness, piglow);
         map(2, time.s, brightness, piglow);
+        piglow.commitTransaction();
     });
 }
 
@@ -26,7 +30,9 @@ function map(leg, value, brightness, piglow) {
         .map(function(v) {
             return +v;
         })
-        .forEach(function(value, index) {
+        .forEach(function(value, index, list) {
+            var aindex = index + (6 - list.length);
+
             if(value === 1) {
                 piglow['l_' + leg + '_' + index] = brightness;
             }
