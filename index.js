@@ -1,18 +1,17 @@
 var Watch = require('./lib/Watch');
+var piglowInterface = require('piglow');
 
 var myWatch;
 
-function start(options) {
-    options = options || {};
-
+function start(options, piglow) {
     var brightness = options.brightness || 100;
 
     myWatch = new Watch();
 
     myWatch.on('tick', function(time) {
-        map(0, time.h, brightness, {});
-        map(1, time.m, brightness, {});
-        map(2, time.s, brightness, {});
+        map(0, time.h, brightness, piglow);
+        map(1, time.m, brightness, piglow);
+        map(2, time.s, brightness, piglow);
     });
 }
 
@@ -35,6 +34,18 @@ function map(leg, value, brightness, piglow) {
 }
 
 module.exports = {
-    start: start,
+    start: function(options, callback) {
+        options = options || {};
+
+        piglowInterface(function(error, piGlowHandler) {
+            if(error) {
+                return callback(error);
+            }
+
+            start(options, piGlowHandler);
+
+            callback(null);
+        });
+    },
     stop: stop
 };
