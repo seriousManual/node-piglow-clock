@@ -1,5 +1,3 @@
-var Watch = require('./lib/Watch');
+var a = require('./index');
 
-(new Watch()).on('tick', function(time) {
-    console.log( arguments );
-});
+a.start();
