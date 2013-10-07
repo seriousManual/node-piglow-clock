@@ -11,13 +11,16 @@
   },
   "repository": "git@github.com:zaphod1984/piglow-watch.git",
   "keywords": [
-      "pimoroni",
-      "piglow",
-      "raspberry pi",
-      "led",
-      "i2c",
-      "binary watch",
-      "watch"
+    "pimoroni",
+    "piglow",
+    "raspberry pi",
+    "led",
+    "i2c",
+    "binary watch",
+    "watch"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "piglow": "~0.6.7"
+  }
 }
