@@ -3,9 +3,7 @@
   "version": "0.0.1",
   "description": "visualize a binary watch via the pimoroni piglow",
   "main": "index.js",
-  "contributors": [
-    "Manuel Ernst <zaphod84@gmx.de>"
-  ],
+  "author": "Manuel Ernst <zaphod84@gmx.de>",
   "scripts": {
     "test": "npm test"
   },
