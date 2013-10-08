@@ -5,7 +5,7 @@
   "main": "index.js",
   "author": "Manuel Ernst <zaphod84@gmx.de>",
   "scripts": {
-    "test": "npm test"
+    "test": "./node_modules/.bin/mocha tests"
   },
   "repository": "git@github.com:zaphod1984/piglow-watch.git",
   "keywords": [

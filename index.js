@@ -37,7 +37,7 @@ function map(leg, value, brightness, piglow) {
         list.unshift(0);
     }
 
-    list.forEach(function(value, index, list) {
+    list.forEach(function(value, index) {
         if(value === 1) {
             piglow['l_' + leg + '_' + index] = brightness;
         }
