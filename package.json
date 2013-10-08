@@ -20,5 +20,11 @@
   "license": "MIT",
   "dependencies": {
     "piglow": "~0.6.7"
+  },
+  "devdependencies": {
+    "mocha": "*",
+    "sandboxed-module": "*",
+    "chai": "*",
+    "sinon": "*"
   }
 }

@@ -1,10 +1,12 @@
 var Watch = require('./lib/Watch');
 var piglowInterface = require('piglow');
 
+var MAX_DIGIT_NUMBER = 6;
+
 var myWatch;
 
 function start(options, piglow) {
-    var brightness = options.brightness || 100;
+    var brightness = options.brightness ? piglowInterface.processValue(options.brightness) : 100;
 
     myWatch = new Watch();
 
@@ -24,19 +26,22 @@ function stop() {
 }
 
 function map(leg, value, brightness, piglow) {
-    (+value)
+    var list = (+value)
         .toString(2)
         .split('')
         .map(function(v) {
             return +v;
-        })
-        .forEach(function(value, index, list) {
-            var aindex = index + (6 - list.length);
-
-            if(value === 1) {
-                piglow['l_' + leg + '_' + index] = brightness;
-            }
         });
+
+    while(list.length < MAX_DIGIT_NUMBER) {
+        list.unshift(0);
+    }
+
+    list.forEach(function(value, index, list) {
+        if(value === 1) {
+            piglow['l_' + leg + '_' + index] = brightness;
+        }
+    });
 }
 
 module.exports = {
