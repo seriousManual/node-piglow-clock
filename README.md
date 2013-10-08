@@ -2,6 +2,8 @@
 
 [![Build Status](https://travis-ci.org/zaphod1984/node-piglow-watch.png)](https://travis-ci.org/zaphod1984/node-piglow-watch)
 
+not ready yet!
+
 <!---
 [![NPM](https://nodei.co/npm/piglow-watch.png)](https://nodei.co/npm/piglow-watch/)
 
