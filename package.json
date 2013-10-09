@@ -1,6 +1,6 @@
 {
   "name": "piglow-watch",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "visualize a binary watch via the pimoroni piglow",
   "main": "index.js",
   "author": "Manuel Ernst <zaphod84@gmx.de>",
