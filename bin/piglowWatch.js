@@ -47,8 +47,6 @@ function showHelp() {
         'Options:',
         '  -b, --brightenss: sets the brightness of the LEDs',
         '  -h, --help:       this help',
-        '  --24hours:        set the 24hours format (default: true)',
-        '  --12hours:        set the 12hours format (default: false)',
         '',
         ''
     ];
