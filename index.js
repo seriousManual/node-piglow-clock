@@ -22,6 +22,7 @@ function start(options, piglow) {
 }
 
 function stop() {
+    piglow.reset;
     myWatch.stop();
 }
 
