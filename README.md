@@ -10,6 +10,8 @@
 node-piglow-watch uses your piglow to show a binary watch. one leg is used for the seconds, one leg for the minutes, one arm for the hours.
 details for setting up your system can be found on the [node-piglow](https://github.com/zaphod1984/node-piglow) page.
 
+In action timelapse video: http://www.youtube.com/watch?v=FgzkyBT-Zkw
+
 ## Installation
 
 ```
