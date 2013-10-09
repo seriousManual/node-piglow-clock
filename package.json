@@ -27,5 +27,9 @@
     "sandboxed-module": "*",
     "chai": "*",
     "sinon": "*"
+  },
+  "preferGlobal": true,
+  "bin": {
+    "piglow-watch": "bin/piglowWatch.js"
   }
 }
