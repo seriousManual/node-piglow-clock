@@ -3,9 +3,10 @@ var piglowInterface = require('piglow');
 
 var MAX_DIGIT_NUMBER = 6;
 
-var myWatch;
+var myWatch, piglow;
 
-function start(options, piglow) {
+function start(options, p) {
+    piglow = p;
     var brightness = options.brightness ? piglowInterface.processValue(options.brightness) : 100;
 
     myWatch = new Watch();

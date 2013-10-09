@@ -13,13 +13,19 @@ if(argv.v || argv.version) {
     process.exit(0);
 }
 
-piGlowWatch.start({}, function() {
-    console.log( 'hello' );
+piGlowWatch.start({}, function(error) {
+    if(error) {
+        console.log(error.message);
+        process.exit(1);
+    }
 });
 
 process.on('SIGINT', end);
 
 function end() {
     piGlowWatch.stop();
-    process.exit();
+
+    setTimeout(function() {
+        process.exit(0);
+    }, 1000);
 }
