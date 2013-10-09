@@ -7,7 +7,7 @@ var myWatch, piglow;
 
 function start(options, p) {
     piglow = p;
-    var brightness = options.brightness ? piglowInterface.processValue(options.brightness) : 100;
+    var brightness = options.brightness ? piglowInterface.processValue(options.brightness) : 10;
 
     myWatch = new Watch();
 
@@ -22,9 +22,11 @@ function start(options, p) {
     });
 }
 
-function stop() {
+function stop(callback) {
     piglow.reset;
     myWatch.stop();
+
+    setTimeout(callback, 100);
 }
 
 function map(leg, value, brightness, piglow) {

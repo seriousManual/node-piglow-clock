@@ -29,11 +29,9 @@ piGlowWatch.start(options, function(error) {
 process.on('SIGINT', end);
 
 function end() {
-    piGlowWatch.stop();
-
-    setTimeout(function() {
-        process.exit(0);
-    }, 1000);
+    piGlowWatch.stop(function() {
+        process.exit();
+    });
 }
 
 function showVersion() {
