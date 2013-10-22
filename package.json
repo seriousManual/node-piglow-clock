@@ -7,7 +7,7 @@
   "scripts": {
     "test": "./node_modules/.bin/mocha tests"
   },
-  "repository": "git@github.com:zaphod1984/piglow-clock.git",
+  "repository": "git@github.com:zaphod1984/node-piglow-clock.git",
   "keywords": [
     "pimoroni",
     "piglow",
