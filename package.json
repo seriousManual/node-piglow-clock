@@ -1,21 +1,21 @@
 {
-  "name": "piglow-watch",
+  "name": "piglow-clock",
   "version": "0.3.0",
-  "description": "visualize a binary watch via the pimoroni piglow",
+  "description": "visualize a binary clock via the pimoroni piglow",
   "main": "index.js",
   "author": "Manuel Ernst <zaphod84@gmx.de>",
   "scripts": {
     "test": "./node_modules/.bin/mocha tests"
   },
-  "repository": "git@github.com:zaphod1984/piglow-watch.git",
+  "repository": "git@github.com:zaphod1984/piglow-clock.git",
   "keywords": [
     "pimoroni",
     "piglow",
     "raspberry pi",
     "led",
     "i2c",
-    "binary watch",
-    "watch"
+    "binary clock",
+    "clock"
   ],
   "license": "MIT",
   "dependencies": {
@@ -30,6 +30,6 @@
   },
   "preferGlobal": true,
   "bin": {
-    "piglow-watch": "bin/piglowWatch.js"
+    "piglow-clock": "bin/piglowClock.js"
   }
 }

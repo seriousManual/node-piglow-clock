@@ -1,6 +1,6 @@
 # todo
 
-* unit test for Watch.js
+* unit test for Clock.js
 * readme
 * debug
 * documentation

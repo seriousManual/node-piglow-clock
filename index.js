@@ -1,17 +1,17 @@
-var Watch = require('./lib/Watch');
+var Clock = require('./lib/Clock');
 var piglowInterface = require('piglow');
 
 var MAX_DIGIT_NUMBER = 6;
 
-var myWatch, piglow;
+var myClock, piglow;
 
 function start(options, p) {
     piglow = p;
     var brightness = options.brightness ? piglowInterface.processValue(options.brightness) : 10;
 
-    myWatch = new Watch();
+    myClock = new Clock();
 
-    myWatch.on('tick', function(time) {
+    myClock.on('tick', function(time) {
         piglow.reset;
 
         piglow.startTransaction();
@@ -24,7 +24,7 @@ function start(options, p) {
 
 function stop(callback) {
     piglow.reset;
-    myWatch.stop();
+    myClock.stop();
 
     setTimeout(callback, 100);
 }

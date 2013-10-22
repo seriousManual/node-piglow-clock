@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 var argv = require('optimist').argv;
-var piGlowWatch = require('../');
+var piGlowClock = require('../');
 
 var options = {};
 
@@ -19,7 +19,7 @@ if(argv.b || argv.brightness) {
     options.brightness = argv.b || argv.brightness;
 }
 
-piGlowWatch.start(options, function(error) {
+piGlowClock.start(options, function(error) {
     if(error) {
         console.log(error.message);
         process.exit(1);
@@ -29,7 +29,7 @@ piGlowWatch.start(options, function(error) {
 process.on('SIGINT', end);
 
 function end() {
-    piGlowWatch.stop(function() {
+    piGlowClock.stop(function() {
         process.exit();
     });
 }
@@ -40,7 +40,7 @@ function showVersion() {
 
 function showHelp() {
     var help = [
-        'Usage: piglow-watch [options]',
+        'Usage: piglow-clock [options]',
         '',
         'Options:',
         '  -b, --brightenss: sets the brightness of the LEDs',
