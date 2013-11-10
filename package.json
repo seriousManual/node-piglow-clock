@@ -20,7 +20,8 @@
   "license": "MIT",
   "dependencies": {
     "piglow": "~0.6.7",
-    "optimist": "~0.6.0"
+    "optimist": "~0.6.0",
+    "ptic": "~0.1.2"
   },
   "devDependencies": {
     "mocha": "*",

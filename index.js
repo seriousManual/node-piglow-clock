@@ -12,9 +12,8 @@ function start(options, p) {
     myClock = new Clock();
 
     myClock.on('tick', function(time) {
-        piglow.reset;
-
         piglow.startTransaction();
+        piglow.reset;
         map(0, time.h, brightness, piglow);
         map(1, time.m, brightness, piglow);
         map(2, time.s, brightness, piglow);
