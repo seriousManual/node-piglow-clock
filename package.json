@@ -1,6 +1,6 @@
 {
   "name": "piglow-clock",
-  "version": "0.3.2",
+  "version": "0.4.0",
   "description": "visualize a binary clock via the pimoroni piglow",
   "main": "index.js",
   "author": "Manuel Ernst <zaphod84@gmx.de>",
