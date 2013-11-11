@@ -19,6 +19,10 @@ if(argv.b || argv.brightness) {
     options.brightness = argv.b || argv.brightness;
 }
 
+if(argv.d || argv.debug) {
+    options.debug = true;
+}
+
 piGlowClock.start(options, function(error) {
     if(error) {
         console.log(error.message);

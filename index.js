@@ -1,17 +1,24 @@
-var Clock = require('./lib/Clock');
+var util = require('util');
+
 var piglowInterface = require('piglow');
+var depugger = require('depugger');
+
+var Clock = require('./lib/Clock');
 
 var MAX_DIGIT_NUMBER = 6;
 
-var myClock, piglow;
+var myClock, piglow, debug;
 
 function start(options, p) {
     piglow = p;
     var brightness = options.brightness ? piglowInterface.processValue(options.brightness) : 10;
 
+    debug = depugger(options.debug, 'clock');
     myClock = new Clock();
 
     myClock.on('tick', function(time) {
+        debug('%dh %dmin %ds %dms', time.h, time.m, time.s, time.ms);
+
         piglow.startTransaction();
         piglow.reset;
         map(0, time.h, brightness, piglow);

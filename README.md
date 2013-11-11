@@ -28,6 +28,7 @@ $ piglow-clock [-b brightness]
 Parameter:
 
 - `brightness`: specifies how bright the LED should shine. range: 0-255, default: 10
+- `debug`: on each tick the time is written to the console
 
 #### End
 
