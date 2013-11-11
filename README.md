@@ -22,7 +22,7 @@ $ npm install piglow-clock -g
 
 ### Command Line
 ```
-$ piglow-clock [-b brightness]
+$ piglow-clock [-b brightness] [-d debug]
 ```
 
 Parameter:
