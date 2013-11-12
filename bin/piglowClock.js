@@ -47,10 +47,10 @@ function showHelp() {
         'Usage: piglow-clock [options]',
         '',
         'Options:',
-        '  -b, --brightenss: sets the brightness of the LEDs',
+        '  -b, --brightness: sets the brightness of the LEDs',
         '  -h, --help:       this help',
+        '  -d, --debug:      activates the debug mode, print the time to console'
         '',
-        ''
     ];
 
     console.log(help.join('\n'));
