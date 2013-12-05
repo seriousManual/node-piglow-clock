@@ -16,7 +16,7 @@ function start(options, p) {
     debug = depugger(options.debug, 'clock');
     myClock = new Clock();
 
-    myClock.on('tick', function(time) {
+    myClock.on('second', function(time) {
         debug('%dh %dmin %ds %dms', time.h, time.m, time.s, time.ms);
 
         piglow.startTransaction();
