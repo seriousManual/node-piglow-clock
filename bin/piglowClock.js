@@ -49,8 +49,8 @@ function showHelp() {
         'Options:',
         '  -b, --brightness: sets the brightness of the LEDs',
         '  -h, --help:       this help',
-        '  -d, --debug:      activates the debug mode, print the time to console'
-        '',
+        '  -d, --debug:      activates the debug mode, print the time to console',
+        ''
     ];
 
     console.log(help.join('\n'));
