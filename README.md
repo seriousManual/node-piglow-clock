@@ -1,6 +1,6 @@
 # node-piglow-clock
 
-[![Build Status](https://travis-ci.org/zaphod1984/node-piglow-clock.png)](https://travis-ci.org/zaphod1984/node-piglow-clock)
+[![Build Status](https://travis-ci.org/seriousManual/node-piglow-clock.png)](https://travis-ci.org/seriousManual/node-piglow-clock)
 
 [![NPM](https://nodei.co/npm/piglow-clock.png)](https://nodei.co/npm/piglow-clock/)
 
@@ -8,7 +8,7 @@
 
 
 node-piglow-clock uses your piglow to show a binary clock. one leg is used for the seconds, one leg for the minutes, one arm for the hours.
-details for setting up your system can be found on the [node-piglow](https://github.com/zaphod1984/node-piglow) page.
+details for setting up your system can be found on the [node-piglow](https://github.com/seriousManual/node-piglow) page.
 
 In action timelapse video: http://www.youtube.com/watch?v=FgzkyBT-Zkw
 
