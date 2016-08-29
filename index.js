@@ -1,5 +1,3 @@
-var util = require('util');
-
 var piglowInterface = require('piglow');
 var depugger = require('depugger');
 
