@@ -3,11 +3,11 @@
   "version": "1.0.0",
   "description": "visualize a binary clock via the pimoroni piglow",
   "main": "index.js",
-  "author": "Manuel Ernst <zaphod84@gmx.de>",
+  "author": "Manuel Ernst <seriousstuff@gmx.de>",
   "scripts": {
     "test": "./node_modules/.bin/mocha tests"
   },
-  "repository": "git@github.com:zaphod1984/node-piglow-clock.git",
+  "repository": "git@github.com:seriousManual/node-piglow-clock.git",
   "keywords": [
     "pimoroni",
     "piglow",
