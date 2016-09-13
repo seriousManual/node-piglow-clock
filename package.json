@@ -21,8 +21,8 @@
   "dependencies": {
     "piglow": "^3",
     "optimist": "~0.6.0",
-    "ptic": "~0.2.0",
-    "depugger": "~0.1.3"
+    "ptic": "~1.0.0",
+    "depugger": "~1.0.0"
   },
   "devDependencies": {
     "mocha": "*",
