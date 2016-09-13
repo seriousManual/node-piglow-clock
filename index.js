@@ -55,7 +55,7 @@ function map(leg, value, brightness, piglow) {
 module.exports = {
     start: function(options, callback) {
         options = options || {};
-        callback = callback || function(){};
+        callback = callback || function () {};
 
         piglowInterface(function(error, piGlowHandler) {
             if(error) {
