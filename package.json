@@ -28,7 +28,7 @@
     "chai": "^3.5.0",
     "mocha": "^3.0.2",
     "sandboxed-module": "^2.0.3",
-    "sinon": "^1.17.5"
+    "sinon": "^2.3.2"
   },
   "preferGlobal": true,
   "bin": {
